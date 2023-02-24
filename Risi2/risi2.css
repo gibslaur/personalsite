@@ -1,0 +1,423 @@
+#hamnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #6E7762;
+  text-transform: lowercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  z-index: 9999;
+}
+
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { 
+  background: #868f7b; 
+}
+
+#hamnav label, #hamburger { 
+  display: none; 
+}
+
+.homehead {
+	height: 20vh; 
+	padding-top: 2em; 
+	font-size: 25px;
+}
+.homehead h1 {
+	padding-left: 10%;
+}
+.content {
+	height: 20vh; 
+	padding-top: 2em; 
+	padding-left: 10%;
+}
+* {
+	box-sizing: border-box; 
+}
+#self /*home page image */ {
+	border-radius: 50%;
+}	
+#self2 /*about page image */ {
+	width: 375px;
+	margin: 0 0 1em 3em;
+	padding: 1em;
+}
+#bio {
+	/*width: 40%;*/
+	padding: 2em 1em 1em 1em;
+	margin-right: 0;
+	line-height: 1.8;
+	flex-basis: 50%;
+	flex: 1;
+}
+caption {
+	letter-spacing: 2px;
+	margin: 1em; 
+	font-weight: bold; 
+	font-size: 25px;
+}
+table {
+	margin-left: auto; 
+	margin-right: auto; 
+	border: 1px solid #3F2860; 
+	border-collapse: collapse; 
+	width: 60%; 
+	max-width: 590px;
+	margin-bottom: 1em;
+}
+td, th  {padding: 5px; border: 1px solid #3F2860;
+}
+tr:nth-of-type(even) {
+	background-color: #d6d9d2;
+}
+
+#shophead {
+	margin-top: 3em;
+	font-size: 25px;
+	text-align: center;
+}
+
+#gallery {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+  }
+#gallery img {
+	  margin: 1em;
+	  box-shadow: 5px 5px #555;
+  }
+#gallery img:hover {
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); 
+  -webkit-transform: scale(1.15); 
+}
+#insta h1 {
+	text-align: center;
+	}
+#home /*main container for home page*/ {
+	display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 1em 1em 5em 1em;
+}
+#home-box {
+	width: 100%;
+    
+}
+#home h2 {
+	padding: 1em 0em 0em .5em;
+	font-size: 70px;
+	width: 100%;
+}
+#home h3 {
+	text-align: right;
+	font-size: 40px;
+	margin-top: 0;
+}
+#about /*main container for about page*/ {
+	display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+    width: 85%;
+    padding: 1em 1em 5em 3em;
+}
+main h2 {
+	letter-spacing: 2px;
+	font-size: 190%;
+}
+#Abouth2 {
+	margin-top: 0;
+	font-size: 3em;
+	text-align: left;
+	width: 100%;
+}
+section {
+	padding-left: 2em; 
+	padding-right: 2em;
+}
+body {
+	background-color: #6E7762;
+	color: #6E7762;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	margin: 0;
+}
+header {
+	background-color: #f4f4f4; 
+	background-image: url(marble.png); 
+	background-size: 100% 100%; 
+	color: #6E7762; 
+	letter-spacing: 3px;
+	margin-top: 50px; 
+	min-height: 200px;
+	text-transform: uppercase;
+}
+
+footer {
+	clear: both;
+	font-size: .75em; 
+	text-align: center; 
+	font-style: italic;
+}
+footer a {
+	color: black;
+}
+.socials {
+	 position: absolute;
+	 bottom: 3em;
+	left: 50%;
+	padding: .5em;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+  #links {
+	 padding: .25em; 
+  }
+  .btn {
+  background-color: #6E7762; 
+  width: 8em;
+  height: 2em;
+  border: none; 
+  color: white; 
+  padding: 2px 4px; 
+  margin: .5em;
+  font-size: 12px; 
+  cursor: pointer; 
+}
+.btn:hover {
+  background-color: black;
+}
+
+.btn span {
+  margin-left: 15px;
+}
+
+#mywork {
+	max-width: 80%;
+	margin: auto;
+	padding-bottom: 3em;
+}
+#examples {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#examples img {
+	border: 2px solid #6E7762;
+	margin: .25em;
+	width: 12em;
+	height: 12em;
+}
+
+#storehero {
+	background-image: url(store.jpg);
+	background-repeat: no-repeat; 
+	height: 300px; 
+	background-size: cover; 
+	display: none;
+}
+
+#wrapper {
+	background-color: #e5e5e5;
+	color: #6E7762;
+	padding: 2em;	
+	position: relative;
+	margin: auto; 
+
+	width: 80%
+}
+
+
+#mobile {
+	display: inline;
+}
+#desktop {
+	display: none;
+}
+#contact {
+	margin: auto;
+	width: 80%;
+}
+form {
+	display: flex; 
+	flex-direction: column; 
+	padding: 2em;
+	width: 90%; 
+}
+#form {
+	padding: 1em;
+	margin: auto;
+	display: flex; 
+}
+input {margin-bottom: .5em;
+}
+textarea {margin-bottom: .5em;
+}
+
+input[type="submit"] {
+	width: 7em; 
+}
+label {
+	text-align: left;
+}
+
+header {
+	font-size: 140%;
+}
+home {height: 50vh; padding-top:50em; padding-left: 8em;
+}
+content {height: 30vh; padding-top: 1em; padding-left: 8em;
+}
+#wrapper {
+	position: relative;
+	margin: auto; 
+	width: 80%
+}
+
+/*media queries*/
+
+@media (max-width: 1400px) {
+    #about {
+      display: initial;
+  }
+
+  #self2 {
+	  width:65%;
+  }
+    
+  #bio {
+    width:95%;
+	padding-top: 0;
+  }
+}
+
+@media (max-width: 1232px) {
+	
+	#home {
+		flex-direction: column;
+	}
+	#home h2 {
+		margin: 0;
+		padding: 0;
+	}
+	#home h3 {
+		font-size: 2em;
+		text-align: left;
+	}
+	#home-box {
+		
+	}
+		#mywork {
+		max-width: 100%;
+	}
+	#gallery img {
+		width: 10em;
+		height: 10em;
+	}
+}
+
+@media (max-width: 854px) {
+	
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #6E7762;;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  
+  #hamitems { 
+    display: none; }
+  #hamnav input:checked ~ #hamitems {
+	  display: block;
+	}
+}
+
+@media (max-width: 760px) {
+	  header {
+	 top: 0;
+	 font-size: 130%;
+	 text-align: center;
+	}
+	  .homehead h1 {
+		  padding-left: 0px;
+	  }
+	#self {
+		height: 15em;
+		width: 15em;
+	}
+
+	#rating {
+		display: none;
+	}
+	
+	#contact {
+		padding-bottom: 1em;
+	}
+		#self {
+		height: 10em;
+		width: 10em;
+	}
+	#home {
+		padding-bottom: 7em;
+	}
+	#home h2 {
+		font-size: 3.3em;
+	}
+	#home h3 {
+		font-size: 2em;
+	}
+	/* */
+	#self2 {
+		width: 95%;
+		height: 80%;
+		margin: auto;
+	}
+	/* */
+	#mywork {
+		padding-bottom: 7em;
+	}
+	#contact {
+		padding-bottom: 7em;
+	}
+	#latestcreations {
+		padding-bottom: 7em;
+	}
+	
+}
+@media (max-width: 595px) {
+    #bio {
+    margin-bottom: 70px;
+}
+}
+@media (max-width: 552px) {
+
+	input[type="submit"] {
+	width: 5.5em;
+	}
+	
+}

@@ -1,0 +1,263 @@
+.homehead /*header*/{
+	height: 20h; 
+	padding-top: 2em; 
+	padding-left: 10%;
+}
+.content {
+	height: 20vh; 
+	padding-top: 2em; 
+	padding-left: 10%;
+}
+* {
+	box-sizing: border-box; 
+}
+#self /*home page image */ {
+	border-radius: 50%;
+}	
+#self2 /*about page image */ {
+	margin: 0 0 1em 3em;
+	padding: 1em;
+}
+#bio {
+	padding: 2em 1em 1em 1em;
+	margin-right: 0;
+	line-height: 1.8;
+	flex-basis: 50%;
+	flex: 1;
+}
+#gallery {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+  }
+#gallery img {
+	  margin: 1em;
+	  box-shadow: 5px 5px #555;
+  }
+#gallery img:hover {
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); 
+  -webkit-transform: scale(1.15); 
+}
+#insta h1 {
+	text-align: center;
+	}
+#home /*main container for home page*/ {
+	display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 1em 1em 5em 1em;
+}
+#home-box {
+	width: 100%;
+}
+#home h2 {
+	padding: 1em 0em 0em .5em;
+	font-size: 70px;
+	width: 100%;
+}
+#home h3 {
+	text-align: right;
+	font-size: 40px;
+	margin-top: 0;
+}
+#about /*main container for about page*/ {
+	display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+    width: 85%;
+    padding: 1em 1em 5em 3em;
+}
+main h2 {
+	letter-spacing: 2px;
+	font-size: 190%;
+}
+#Abouth2 {
+	margin-top: 0;
+	font-size: 3em;
+	text-align: left;
+	width: 100%;
+}
+section {
+	padding-left: 2em; 
+	padding-right: 2em;
+}
+body {
+	background-color: #6E7762;
+	color: #6E7762;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	margin: 0;
+}
+header {
+	background-color: #f4f4f4; 
+	background-image: url(marble.png); 
+	background-size: 100% 100%; 
+	color: #6E7762; 
+	letter-spacing: 3px;
+	margin-top: 50px; 
+	min-height: 200px;
+	text-transform: uppercase;
+}
+nav {
+    background-color: #6E7762;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    z-index: 9999;
+}
+nav li {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	white-sapce: nowrap;
+}
+nav a {
+	text-decoration: none; 
+	display: block;
+}
+.studio {
+	font-style: italic;
+}
+nav a:link {color: #f4f4f4;
+}
+nav a:visited {color: #e6e6e6
+}
+nav a:hover {color: black; 
+}
+nav ul {
+	list-style-type: none; 
+	display: flex; 
+	flex-wrap: nowrap; 
+	margin: 0; 
+	font-size: 1.4em; 
+	justify-content: flex-end;
+}
+footer {
+	clear: both;
+	font-size: .75em; 
+	text-align: center; 
+	font-style: italic;
+}
+footer a {
+	color: black;
+}
+.socials {
+	 position: absolute;
+	 bottom: 3em;
+	left: 50%;
+	padding: .5em;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+  .btn {
+  background-color: #6E7762; 
+  width: 8em;
+  height: 2em;
+  border: none; 
+  color: white; 
+  padding: 2px 4px; 
+  margin: .5em;
+  font-size: 12px; 
+  cursor: pointer; 
+}
+.btn:hover {
+  background-color: black;
+}
+
+.btn span {
+  margin-left: 15px;
+}
+
+#mywork {
+	max-width: 80%;
+	margin: auto;
+	padding-bottom: 3em;
+}
+
+#storehero {
+	background-image: url(store.jpg);
+	background-repeat: no-repeat; 
+	height: 300px; 
+	background-size: cover; 
+	display: none;
+}
+section form { padding-bottom: 1em;
+}
+#wrapper {
+	background-color: #e5e5e5;
+	color: #6E7762;
+	padding: 2em;	
+	position: relative;
+	margin: auto; 
+	width: 80%
+}
+
+
+#mobile {
+	display: inline;
+}
+#desktop {
+	display: none;
+}
+caption {
+	margin: 1em; 
+	font-weight: bold; 
+	font-size: 120%;
+}
+#contact {
+	margin: auto;
+	width: 80%;
+}
+form {
+	display: flex; 
+	flex-direction: column; 
+	padding: 2em;
+	width: 90%; 
+}
+#form {
+	padding: 1em;
+	margin: auto;
+}
+input {margin-bottom: .5em;
+}
+textarea {margin-bottom: .5em;
+}
+/* mobile */
+@media only screen and (max-width: 600px) {
+ body {
+   background-color: lightblue;
+  }
+}
+
+input[type="submit"] {grid-column: 2 / 3; width: 9em; 
+}
+label {text-align: right;
+}
+}
+
+header {
+	font-size: 140%;
+}
+home {height: 50vh; padding-top:50em; padding-left: 8em;
+}
+content {height: 30vh; padding-top: 1em; padding-left: 8em;
+}
+#wrapper {
+	position: relative;
+	margin: auto; 
+	width: 80%
+}
+
+	
